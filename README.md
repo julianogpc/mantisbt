@@ -8,7 +8,7 @@
 ### Usage
 ##### Create Virtual Machine and Install Docker
 ```
-$ vagrant up -d --provision-with install
+$ vagrant up --provision-with install
 ```
 ##### Start MantisBT
 ```
