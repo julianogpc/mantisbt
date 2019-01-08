@@ -1,5 +1,13 @@
 # mantisbt
 
+### Build With
+* [VirtualBox](https://www.virtualbox.org/)
+* [Vagrant](https://www.vagrantup.com/)
+* [Ansible](https://docs.ansible.com/ansible/2.7/)
+* [Docker](https://docs.docker.com/)
+* [Docker Compose](https://docs.docker.com/compose/)
+
+
 ### Requirements
 * [VirtualBox >= 5.2.18](https://www.virtualbox.org/wiki/Downloads)
 * [Vagrant >= 2.0.2](https://www.vagrantup.com/downloads.html)
@@ -34,6 +42,8 @@ $ vagrant halt
 ```
 $ vagrant destroy
 ```
+
+
 ### Installation Options
 ```
 $ firefox http://localhost:8080/admin/install.php
