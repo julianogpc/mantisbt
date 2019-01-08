@@ -6,11 +6,34 @@
 
 
 ### Usage
+##### Create Virtual Machine and Install Docker
 ```
-$ vagrant up -d
-$ vagrant ssh -c "cd /vagrant/ && docker-compose up -d"
+$ vagrant up -d --provision-with install
 ```
-
+##### Start MantisBT
+```
+$ vagrant provision --provision-with start
+```
+##### Stop MantisBT
+```
+$ vagrant provision --provision-with stop
+```
+##### Restart MantisBT
+```
+$ vagrant provision --provision-with restart
+```
+##### Destroy MantisBT
+```
+$ vagrant provision --provision-with destroy
+```
+##### Shutdown Virtual Machine
+```
+$ vagrant halt
+```
+##### Shutdown Virtual Machine and Destroys All Resources 
+```
+$ vagrant destroy
+```
 ### Installation Options
 ```
 $ firefox http://localhost:8080/admin/install.php
