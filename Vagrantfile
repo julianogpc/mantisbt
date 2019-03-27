@@ -19,7 +19,7 @@ Vagrant.require_version ">= 2.0.2"
 
 Vagrant.configure(2) do |config|
   config.vm.box = "ubuntu/bionic64"
-  config.vm.box_version = "20190107.0.0"
+  config.vm.box_version = "20190327.0.0"
 
   (1..$number_of_nodes).each do |i|
     hostname = "ubuntu-%02d" % i
