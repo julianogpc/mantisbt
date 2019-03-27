@@ -13,8 +13,16 @@
 * [Vagrant >= 2.0.2](https://www.vagrantup.com/downloads.html)
 
 
+### Up and Running
+```
+$ git clone https://github.com/julianogpc/mantisbt.git
+$ cd mantisbt
+$ vagrant up
+```
+
+
 ### Usage
-##### Create Virtual Machine and Install Docker
+##### Install Docker
 ```
 $ vagrant up --provision-with install
 ```
