@@ -40,7 +40,7 @@ Vagrant.configure(2) do |config|
 
         node.vm.synced_folder ".", "/vagrant", type: "virtualbox", :mount_options => ["dmode=777","fmode=777"]
 
-        node.vm.provision "install", type: "ansible_local", run: "once" do |ansible|
+        node.vm.provision "install", type: "ansible_local" do |ansible|
           ansible.playbook = "_ansible/install_docker.yml"
           ansible.install_mode = $ansible_install_mode
           ansible.version = $ansible_version
@@ -48,7 +48,7 @@ Vagrant.configure(2) do |config|
           ansible.extra_vars = { project_src: $project_src }
         end
 
-        node.vm.provision "start", type: "ansible_local", run: "once" do |ansible|
+        node.vm.provision "start", type: "ansible_local" do |ansible|
           ansible.playbook = "_ansible/start_mantisbt.yml"
           ansible.install_mode = $ansible_install_mode
           ansible.version = $ansible_version
